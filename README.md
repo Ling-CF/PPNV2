@@ -4,7 +4,7 @@
 
 The pyramidal predictive network (PPNV1) proposes an interesting temporal pyramid architecture and yields promising results on the task of future video-frame prediction. We expose and analyze its signal dissemination and characteristic artifacts, and propose corresponding improvements in model architecture and training strategies to address them. Although the PPNV1 theoretically mimics the workings of human brain, its careless signal processing leads to aliasing in the network. We redesign the network architecture to solve the problems. In addition to improving the unreasonable information dissemination, the new architecture also aims to solve the aliasing in neural networks. Different inputs are no longer simply concatenated, and the downsampling and upsampling artifacts have also been redesigned to ensure that the network can more easily construct images from Fourier features of low-frequency inputs. Finally, we further improve the training strategies, to alleviate the problem of input inconsistency during training and testing. Overall, the improved model is more interpretable, stronger, and the quality of its predictions is better. 
 
-! [image](images/additional_experiment.png)
+![image](images/additional_experiment.png)
 
 ### Dependencies
 * PyTorch, version 1.12.1 or above
