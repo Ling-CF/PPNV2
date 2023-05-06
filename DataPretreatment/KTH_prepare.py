@@ -12,15 +12,15 @@ import torch
 import sys
  
 def splitFrames(videoFileName):
-    cap = cv2.VideoCapture(videoFileName) # 打开视频文件
+    cap = cv2.VideoCapture(videoFileName) 
     num = 1
     temp = []
     while True:
-        # success 表示是否成功，data是当前帧的图像数据；.read读取一帧图像，移动到下一帧
+        
         success, frame = cap.read()
         if not success:
             break
-        frame = cv2.resize(frame, (128,96))
+        frame = cv2.resize(frame, (160,128))
         frame = np.transpose(frame, (2,0,1))
         frame = torch.from_numpy(frame).unsqueeze(dim=0)
         temp.append(frame)      
