@@ -1,4 +1,6 @@
+We introduce here a predictive coding based model that aims to generate accurate and sharp future frames. Inspired by the predictive coding hypothesis and related works, the total model is updated through a combination of bottom-up and top-down information flows, which can enhance the interaction between different network levels. Most importantly, We propose and improve several artifacts to ensure that the neural networks generate clear and natural frames. Different inputs are no longer simply concatenated or added, they are calculated in a modulated manner to avoid being roughly fused. The downsampling and upsampling modules have been redesigned to ensure that the network can more easily construct images from Fourier features of low-frequency inputs. Additionally,  the training strategies are also explored and improved to generate believable results and alleviate inconsistency between the input predicted frames and ground truth. Our proposals achieve results that better balance pixel accuracy and visualization effect.
 
+The arxiv paper is available [here](https://arxiv.org/abs/2301.05421)
 
 ![image](images/TotalNet.png) 
 
